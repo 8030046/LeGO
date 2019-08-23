@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href=" css/reset.css">
+    <link rel="stylesheet" href=" css/common.css">
+    <link rel="stylesheet" href=" css/index.css">
+    <link rel="stylesheet" href=" css/search.css">
+    <link rel="stylesheet" href=" css/logo.css">
+    <link rel="stylesheet" href=" css/sidebar.css">
+    <link rel="stylesheet" href=" css/banner.css">
+    <link rel="stylesheet" href=" css/recommend.css">
+    <link rel="stylesheet" href=" css/ebook.css">
+    <link rel="stylesheet" href=" css/base.css">
+    <link rel="stylesheet" href=" css/clothes.css">
+    <link rel="stylesheet" href=" css/outdoor.css">
+    <link rel="stylesheet" href=" css/child.css">
+    <link rel="stylesheet" href=" css/home.css">
+    <link rel="stylesheet" href=" css/goods.css">
+    <link rel="stylesheet" href=" css/footer.css">
+    <link rel="stylesheet" href="css/scollbar.css">
+    <link rel="stylesheet" href="css/liftPosition.css">
+    <link rel="stylesheet" href="css/login/login.css">
+    <link rel="stylesheet" href="css/zc/zc.css">
+    <link rel="stylesheet" href="css/zc/jquery.idcode.css" />
+    <link rel="stylesheet" href="css/shopCar/shopCar.css">
+    <link rel="stylesheet" href="css/shopCar/carts.css">
+
+
+
+
+    <script src=" js/jquery-1.11.3/jquery.min.js"></script>
+    <script src=" js/search.js"></script>
+    <script src=" js/sidebar.js"></script>
+    <script src=" js/banner.js"></script>
+    <script src=" js/jquery.tabs.js"></script>
+    <script src=" js/jquery.lazyload.js"></script>
+    <script src=" js/tabScript.js"></script>
+    <script src=" js/clothes.js"></script>
+    <script src=" js/outdoor.js"></script>
+    <script src=" js/child.js"></script>
+    <script src=" js/goods.js"></script>
+    <script src=" js/footer.js"></script>
+    <script src="js/scollbar.js"></script>
+    <script src="js/liftPosition.js"></script>
+    <script src="js/login/login.js"></script>
+    <script src="js/zc/zc.js"></script>
+    <script src="js/zc/jquery.idcode.js"></script>
+    <script src="js/shopCar/shopCar.js"></script>
+    <script src="js/shopCar/carts.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <div class="warpper clearfix colorfff font14">
+            <span class="fl ">legochina.cn</span>
+            <span class="fr">欢迎光临<a class="colorff" href="#">乐购</a>，请 <a class="colorfff" href="login.html">登陆</a>\<a
+                    class="colorff" href="zc.html">注册</a></span>
+            <img src="img/shopCar/04-购物车_02.jpg" alt="" style="position: relative; left: -340px;">
+            <span class="address">
+                <p>配送至</p>
+                <select name="" id="">
+                    <option value="">成都高新区三环内</option>
+                    <option value="">重庆市皇家物联网学院</option>
+                </select>
+            </span>
+        </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div id="search">
+        <div class="warpper clearfix">
+
+            <!-- 搜索栏 -->
+            <div class="container fr clearfix" style="    padding-right: 0;">
+                <div class="input">
+                    <input type="text" placeholder="创意文具" autocomplete="off" id="search-input">
+                    <!-- 搜索下栏 -->
+                    <div class="hot-list"></div>
+                </div>
+                <!-- 搜索按钮 -->
+                <div class="search"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 购物车功能 -->
+    <div id="shop" class="warpper clearfix">
+        <!-- 购物车功能 -->
+        <section class="cartMain">
+            <p>填写并核对订单信息</p>
+            <div class="cartMain_hd">
+                <ul class="order_lists cartTop">
+                    <li class="list_chk">
+                        <!--所有商品全选-->
+                        <input type="checkbox" id="all" class="whole_check">
+                        <label for="all"></label>
+                        全选
+                    </li>
+                    <li class="list_con">商品信息</li>
+                    <li class="list_info">商品参数</li>
+                    <li class="list_price">单价</li>
+                    <li class="list_amount">数量</li>
+                    <li class="list_sum">金额</li>
+                    <li class="list_op">操作</li>
+                </ul>
+            </div>
+
+            <div class="cartBox">
+
+                <div class="order_content">
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_2" class="son_check">
+                            <label for="checkbox_2"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="img/shopCar/2.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥980</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥980</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_3" class="son_check">
+                            <label for="checkbox_3"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="img/shopCar/1.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥780</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥780</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_6" class="son_check">
+                            <label for="checkbox_6"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="img/shopCar/3.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥180</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥180</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--底部-->
+            <div class="bar-wrapper">
+                <p style="width: 100px;margin: 0;float: left;cursor:pointer " class="deleteShop" href="#">删除选中商品</p>
+                <div class="bar-right">
+                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                    <div class="calBtn"><a href="order.html">结算</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="model_bg"></section>
+        <section class="my_model">
+            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+            <p>您确认要删除该宝贝吗？</p>
+            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                    class="dialog-close">关闭</a></div>
+        </section>
+
+    </div>
+
+    <div id="youLike">
+        <div class="warpper">
+            <p>猜你喜欢</p>
+            <div class="hx"></div>
+            <ul>
+                <li>
+                    <span>
+                        <img src="img/shopCar/22935553-1_l.png" alt="">
+                        <span class="zk"><img src="img/shopCar/D.png" alt="">
+                            <p class="z">8折</p>
+                        </span>
+                        <p>白夜行 东野上吾</p>
+                        <span class="youLike_recommend">推荐：<img src="img/shopCar/XX.png" alt=""></span>
+                        <p style="font-size: 18px;color: #f4290d;float: left;margin-right: 22px;">￥:38</p><del
+                            style="color: #c0c0c0; font-size: 18px;">￥:58</del>
+                    </span>
+
+                    <span>
+                        <img src="img/shopCar/22935553-1_l.png" alt="">
+                        <span class="zk"><img src="img/shopCar/D.png" alt="">
+                            <p class="z">8折</p>
+                        </span>
+                        <p>白夜行 东野上吾</p>
+                        <span class="youLike_recommend">推荐：<img src="img/shopCar/XX.png" alt=""></span>
+                        <p style="font-size: 18px;color: #f4290d;float: left;margin-right: 22px;">￥:38</p><del
+                            style="color: #c0c0c0; font-size: 18px;">￥:58</del>
+                    </span>
+
+                    <span>
+                        <img src="img/shopCar/22935553-1_l.png" alt="">
+                        <span class="zk"><img src="img/shopCar/D.png" alt="">
+                            <p class="z">8折</p>
+                        </span>
+                        <p>白夜行 东野上吾</p>
+                        <span class="youLike_recommend">推荐：<img src="img/shopCar/XX.png" alt=""></span>
+                        <p style="font-size: 18px;color: #f4290d;float: left;margin-right: 22px;">￥:38</p><del
+                            style="color: #c0c0c0; font-size: 18px;">￥:58</del>
+                    </span>
+
+                    <span>
+                        <img src="img/shopCar/22935553-1_l.png" alt="">
+                        <span class="zk"><img src="img/shopCar/D.png" alt="">
+                            <p class="z">8折</p>
+                        </span>
+                        <p>白夜行 东野上吾</p>
+                        <span class="youLike_recommend">推荐：<img src="img/shopCar/XX.png" alt=""></span>
+                        <p style="font-size: 18px;color: #f4290d;float: left;margin-right: 22px;">￥:38</p><del
+                            style="color: #c0c0c0; font-size: 18px;">￥:58</del>
+                    </span>
+
+                    <span>
+                        <img src="img/shopCar/22935553-1_l.png" alt="">
+                        <span class="zk"><img src="img/shopCar/D.png" alt="">
+                            <p class="z">8折</p>
+                        </span>
+                        <p>白夜行 东野上吾</p>
+                        <span class="youLike_recommend">推荐：<img src="img/shopCar/XX.png" alt=""></span>
+                        <p style="font-size: 18px;color: #f4290d;float: left;margin-right: 22px;">￥:38</p><del
+                            style="color: #c0c0c0; font-size: 18px;">￥:58</del>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="warpper" style="margin-top:90px;"><img src="img/banner3.png" alt=""></div>
+    <!-- 页脚 -->
+    <div id="footer" class="clearfix " style="margin-top: -14px;">
+        <span class="hx"></span>
+        <div class="footer_top">
+            <div class="warpper">
+            <img src="img/222_11.png" alt="">
+            <img src="img/222_13.png" alt="">
+            <img src="img/222_15.png" alt="">
+            <img src="img/222_17.png" alt="">
+        </div>
+        </div>
+        <div class="footer_center warpper">
+            <ul>
+                <li>
+                    <span>购物指南</span>
+                    <a href="">购物流程</a>
+                    <a href="">发票制度</a>
+                    <a href="">账户管理</a>
+                    <a href="">会员优惠</a>
+
+                </li>
+                <li>
+                    <span>购物指南</span>
+                    <a href="">购物流程</a>
+                    <a href="">发票制度</a>
+                    <a href="">账户管理</a>
+                    <a href="">会员优惠</a>
+
+                </li>
+                <li>
+                    <span>购物指南</span>
+                    <a href="">购物流程</a>
+                    <a href="">发票制度</a>
+                    <a href="">账户管理</a>
+                    <a href="">会员优惠</a>
+
+                </li>
+                <li>
+                    <span>购物指南</span>
+                    <a href="">购物流程</a>
+                    <a href="">发票制度</a>
+                    <a href="">账户管理</a>
+                    <a href="">会员优惠</a>
+
+                </li>
+                <li>
+                    <span>购物指南</span>
+                    <a href="">购物流程</a>
+                    <a href="">发票制度</a>
+                    <a href="">账户管理</a>
+                    <a href="">会员优惠</a>
+
+                </li>
+            </ul>
+            <img style="margin-top: 74px" src="img/logo_00.png" alt="">
+        </div>
+        <div class="footer_bottom warpper">
+            <a href="">公司简介</a> |
+            <a href=""> Investor Relations</a> |
+            <a href="">网站联盟</a> |
+            <a href="">乐购招商</a> |
+            <a href="">机构销售</a> |
+            <a href="">手机乐购</a> |
+            <a href="">官方Blog</a> |
+            <a href="">热词搜索</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
